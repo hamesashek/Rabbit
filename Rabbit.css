@@ -1,0 +1,284 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,800i';
+div {
+  position: absolute;
+}
+
+.prompt {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 6em;
+  padding: 1em;
+  bottom: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em + 1.5vw);
+  font-weight: bold;
+}
+
+.container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  width: 24em;
+  height: 24em;
+  background: aquamarine;
+  border-radius: 50%;
+  border: 1em solid #b2ffe5;
+  overflow: hidden;
+}
+
+.body {
+  top: 12em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 14em;
+  height: 12em;
+  border-radius: 6.5em 6.5em 5em 5em;
+  background: #F2F2F2;
+  z-index: 50;
+}
+
+.eye {
+  top: 4em;
+  width: 3em;
+  height: 3em;
+  background: #2E2E2E;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.left {
+  left: 3em;
+}
+
+.right {
+  right: 3em;
+}
+
+.shine {
+  top: 0.22em;
+  left: 0.22em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: white;
+}
+
+.nose {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 7.5em;
+  width: 1.9em;
+  height: 1.1em;
+  border-radius: 50% 50% 35% 35%;
+  background: pink;
+  z-index: 960;
+}
+
+.mouth {
+  z-index: 950;
+}
+
+.mouth-left {
+  background: #fff;
+  width: 2.6em;
+  height: 2em;
+  border-radius: 50%;
+  top: 7.8em;
+  left: 4.7em;
+}
+
+.mouth-right {
+  background: #fff;
+  width: 2.6em;
+  height: 2em;
+  border-radius: 50%;
+  top: 7.8em;
+  left: 6.7em;
+}
+
+.ear-left {
+  background: #F2F2F2;
+  height: 14em;
+  width: 4em;
+  border-radius: 50%;
+  left: 6em;
+  top: 1.6em;
+  transform: rotate(-10deg);
+  z-index: 10;
+}
+
+.inner-ear-left {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #fff;
+  height: 10em;
+  width: 2.6em;
+  border-radius: 50%;
+  top: 3em;
+}
+
+.ear-right {
+  background: #F2F2F2;
+  height: 14em;
+  width: 4em;
+  border-radius: 50%;
+  right: 6em;
+  top: 1.6em;
+  transform: rotate(10deg);
+  z-index: 10;
+}
+
+.inner-ear-right {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #fff;
+  height: 10em;
+  width: 2.6em;
+  border-radius: 50%;
+  top: 3em;
+}
+
+.mark {
+  top: 11em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 7em;
+  height: 5em;
+  border-radius: 50% 50% 0 0;
+  background: #fff;
+}
+
+.tongue {
+  top: 8.6em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 0 0 5em 5em;
+  width: 2em;
+  height: 0;
+  background: pink;
+  z-index: 900;
+  transition: height 500ms ease-in-out;
+}
+
+.container:hover > .body > .tongue {
+  height: 1.6em;
+}
+
+.container:hover > .balloon-1 {
+  animation: up 3s ease-in;
+}
+
+.container:hover > .balloon-2 {
+  animation: up 3s 300ms ease-in;
+}
+
+.balloon-1 {
+  background: red;
+  width: 6.6em;
+  height: 8em;
+  left: 2em;
+  top: 24em;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.inner-balloon-1 {
+  background: white;
+  opacity: 0.3;
+  width: 5.6em;
+  height: 7em;
+  left: 0em;
+  top: 0em;
+  border-radius: 50%;
+}
+
+.knot-1 {
+  background: red;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 1em;
+  height: 1em;
+  top: 7.6em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.line-1 {
+  width: 1px;
+  height: 6em;
+  background: grey;
+  top: 8.6em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.balloon-2 {
+  background: blue;
+  width: 6em;
+  height: 7.4em;
+  left: 10em;
+  top: 24em;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.inner-balloon-2 {
+  background: white;
+  opacity: 0.3;
+  width: 5em;
+  height: 6.4em;
+  left: 0.1em;
+  top: 0.2em;
+  border-radius: 50%;
+}
+
+.knot-2 {
+  background: blue;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 1em;
+  height: 1em;
+  top: 7.2em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.line-2 {
+  width: 1px;
+  height: 6em;
+  background: grey;
+  top: 8.2em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@keyframes up {
+  to {
+    top: -14em;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 8px;
+  }
+}
